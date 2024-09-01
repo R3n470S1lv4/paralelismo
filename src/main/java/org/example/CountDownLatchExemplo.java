@@ -39,7 +39,7 @@ public class CountDownLatchExemplo {
 
     //Executa a tarefa sem delay inicial a cada 1 segundo
     scheduledExecutorService.scheduleAtFixedRate(PrincipalTask, 0, 1, TimeUnit.SECONDS);
-    //Execura a tarefa sem delay inicial, porem sempre a cada execucao tem um delay de 3 segundos
+    //Executa a tarefa sem delay inicial, porem sempre a cada execucao tem um delay de 3 segundos
     scheduledExecutorService.scheduleWithFixedDelay(task2, 0, 3, TimeUnit.SECONDS);
     scheduledExecutorService.scheduleWithFixedDelay(task3, 0, 3, TimeUnit.SECONDS);
   }

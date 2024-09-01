@@ -41,6 +41,7 @@ public class CyclicBarrierExemple {
         new MyRunnable(5, 5, cyclicBarrier)
     );
 
+    //scheduleAtFixedRate, executa a tarefa indefinidamente a cada 1 segundo
     tasks.forEach(task -> scheduledExecutorService.scheduleAtFixedRate(task, 0, 1, TimeUnit.SECONDS));
   }
 }
